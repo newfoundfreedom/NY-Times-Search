@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1><span class="glyphicon glyphicon-list-alt"></span>New York Times Search</h1>
+    </div>
+    <div class="row"></div>
+    <div class="col-12-sm">
+        <div class="panel panel-default">
+            <div id="headerDiv" class="panel-heading">Search Parameters</div>
+            <div class="container">
+
+                <form id="form" action="">
+                    <label for="input">Search Term:</label>
+                    <input type="text" class="form-control" id="search-term" placeholder="johnson" required><br>
+                    <label for="input">Number of records to Retrieve:</label>
+                    <input type="number" class="form-control"  id="num-search" placeholder="10" required><br>
+                    <label for="input">Start Year (Optional):</label>
+                    <input type="number" class="form-control"  id="start-year" placeholder="1948" required><br>
+                    <label for="input">End Year (Optional):</label>
+                    <input type="number" class="form-control"  id="end-year" placeholder="1950" required>
+                    <button type="button" id="search" class="btn btn-info"><span class="glyphicon glyphicon-search"></span>Search
+                        <button type="button" id="clear" class="btn btn-info"><span class="glyphicon glyphicon-trash"></span>Clear Results
+                </form>
+            </div>
+
+        </div>
+        <div class="panel panel-default">
+            <div id="headerDiv" class="panel-heading">Top Articles</div>
+            <div class="container">
+                <div class="panel-body">
+                    <div id="article-dump">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="nytimes.js"></script>
+</body>
+</html>
